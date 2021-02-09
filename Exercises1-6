@@ -1,0 +1,54 @@
+
+function phrase3words(value1, value2, value3) {
+    var space = " "
+    var ans = value1 + space + value2 + space + value3;
+    return ans;
+}
+
+function reformatName(first,last) {
+    var comma = ", ";
+    var ans = last + comma + first;
+    return ans;
+}
+
+function numberPixels(namefile) {
+var someImg = new SimpleImage(namefile);
+var height = someImg.getHeight();
+var width = someImg.getWidth();
+// missing code
+var total = width*height;
+return total;
+}
+
+function perimeter(namefile) {
+    var someImg = new SimpleImage(namefile);
+    var height = someImg.getHeight();
+    var width = someImg.getWidth();
+    var ans = height * 2 + width * 2;
+    return ans;
+}
+
+function printPixel(nameImage, xpos, ypos) {
+    var someImg = new SimpleImage(nameImage);
+    var pix = someImg.getPixel(xpos,ypos);
+    var red = pix.getRed();
+    var green = pix.getGreen();
+    var blue = pix.getBlue();
+    var rsentence = "red is ";
+    var gsentence = "green is ";
+    var bsentence = "blue is ";
+    print (rsentence+red);
+    print(gsentence+green);
+    print(bsentence+blue);
+}
+
+function sumPixel(nameImage, xpos, ypos) {
+    var someImg = new SimpleImage(nameImage);
+    var pix = someImg.getPixel(xpos,ypos)
+    var red = pix.getRed();
+    var green = pix.getGreen();
+    var blue = pix.getBlue();
+    var ans = red + green + blue;
+    return ans
+}
+
